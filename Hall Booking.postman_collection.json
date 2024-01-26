@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "f17526e3-8dbe-491a-8c76-3ca226d23a43",
+		"name": "Hall Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28366549"
+	},
+	"item": [
+		{
+			"name": "Get Room",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n  \"roomName\": \"R2\", \r\n  \"seats\": \"20\",\r\n   \"amenities\": \"Tv,Ac,Table\",\r\n   \" pricePerHour\": \"200\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/room-add"
+			},
+			"response": []
+		},
+		{
+			"name": "Boooking Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"customerName\": \"Janu\",\r\n    \"date\": \"23-1-24\",\r\n    \"startTime\": \"12:00pm\",\r\n    \"endTime\": \"3:00am\"\r\n    \r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/booking-create"
+			},
+			"response": []
+		},
+		{
+			"name": "Booking",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Room List",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Booking Customer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
